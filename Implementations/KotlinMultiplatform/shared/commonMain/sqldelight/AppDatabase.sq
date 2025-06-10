@@ -1,0 +1,22 @@
+CREATE TABLE people (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL
+);
+
+insertPerson:
+INSERT INTO people (name) VALUES(?);
+
+selectPerson:
+SELECT * FROM people WHERE name = ?;
+
+selectPeople:
+SELECT * FROM people;
+
+updatePerson:
+UPDATE people SET name='hello' WHERE name = ?;
+
+removePerson:
+DELETE FROM people WHERE name = ?;
+
+removeAllPeople:
+DELETE FROM people;
